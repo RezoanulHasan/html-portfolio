@@ -1,6 +1,16 @@
 *{
     margin: 0;
     font-family: 'Open Sans';
+
+}
+
+
+
+body{
+
+    margin: 0 auto;
+    border: 1px solid black;
+    max-width: 980px;;
 }
 nav{
     display: flex;
@@ -86,7 +96,7 @@ margin-bottom: 17px;
 
 .header{
     background-color:#FFF8F3 ;
-    background-image: url('images/header_bg'), url('images/developer.png.png'); 
+    background-image: url('images/header_bg'), url('../images/developer.png.png'); 
     background-repeat: no-repeat;
     background-position: bottom right , left;
 }
@@ -164,6 +174,36 @@ border-radius: 5px;
 padding:30px ;
 
 }
+
+
+
+@media screen and (max-width: 576px) {
+.contact,
+.resume-content,
+.skills-container, 
+.A-I-C ,
+.banner,
+nav,
+nav ul{
+    flex-direction: column;
+    gap:20px;
+    padding: 10px 20px;
+}
+.banner{
+    margin: 0 20px;
+}
+
+.about,.contact{
+  padding: 20px;
+    
+}
+nav ul{
+align-items: stretch;
+gap:15px;
+}
+}
+
+
 .skill-title{
 font-weight: 700;
 font-size: 22px;
@@ -177,6 +217,11 @@ text-align: center;
 color: #757575;
 }
 
+
+
+
+
+
 /*resume Style*/
 
 .resume-content{
@@ -185,6 +230,26 @@ gap:24px ;
 
 
 }
+
+@media screen and (max-width: 576px) {
+.contact input[type="text"],input[type="email"],input[type="text"],textarea{
+   
+    padding: 0 0 0 5px;
+
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
 
 .resume-item{
     margin-top: 30px;
@@ -222,10 +287,13 @@ color: #757575;
 
 
 
+
+
+
 .contact{
     display: flex;
     gap: 100px;
-    background: #FFF8F3;
+    background: aquamarine;
     padding: 130px 200px;
 }
 
